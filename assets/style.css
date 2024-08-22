@@ -69,6 +69,10 @@ main {
     display: flex;
     justify-content: space-around;
 
+header {
+    margin-top: 2rem;
+
+}    
 
 }
 .section_form {
