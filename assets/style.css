@@ -1,0 +1,241 @@
+:root {
+    --main-color: #F3F5FC;
+    --dark-blue: #0A3871;
+    --blue: #0A3871;
+    --grey: #D8DFE8;
+    --black: #2e2e2e;
+    --border-black:#2e2e2e;
+    --inter-font: "Inter", sans-serif;
+    --icon: #969696;
+}
+
+.darkmode {
+    --main-color: #0f0f0f;
+    --dark-blue: #0A3871;
+    --grey: #4b4b4b;
+    --black: #e4e4e4;
+    --inter-font: "Inter", sans-serif;
+}
+
+.logo {
+    margin-top: 15px;
+}
+
+#theme-switch{
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    
+}
+
+#theme-switch svg{
+    fill: var(--icon);
+
+}
+
+#theme-switch svg:last-child{
+    display: none;
+}
+
+.darkmode #theme-switch svg:first-child{
+    display: none;
+}
+
+.darkmode #theme-switch svg:last-child{
+    display:block;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: var(--main-color);
+    font-family: var(--inter-font);
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+
+
+}
+.section_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70dvh;
+}
+
+.input_form {
+    resize: none;
+    margin-top: 10px;
+    max-width: 575px;
+    width: 100%;
+    height: 65dvh;
+    background: var(--grey);
+    border-radius: 8px;
+    border: 1px solid var(--border-black);
+    outline: none;
+    font-family: var(--inter-font);
+    font-size: 3.2rem;
+    color: var(--black);
+    margin-bottom: 3rem;
+    overflow: auto;
+}
+
+::placeholder {
+    color: var(--black);
+}
+
+.msg_alert {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: var(--black);
+}
+
+.submit_container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.btn_form {
+    background: var(--blue);
+    color: white;
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    border: 1px solid var(--dark-blue);
+    font-weight: 600;
+}
+
+.btn_form--secondary {
+    background: white;
+    color: var(--dark-blue);
+}
+
+.btn_result {
+    color: var(--dark-blue);
+    background: white;
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    border: 1px solid var(--border-black);
+    font-weight: 600;
+    
+}
+
+.btn_result--secondary {
+    color: var(--dark-blue);
+    background: white;
+}
+
+
+.result {
+    background: var(--grey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    height: 72dvh;
+    border-radius: 32px;
+    border: 1px solid var(--border-black);
+    max-width: 40rem;
+    width: 100%;
+}
+
+.img_result {
+    display: block;
+}
+
+
+.title_result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.text_result {
+    resize: none;
+    font-family: var(--inter-font);
+    max-width: 300px;
+    width: 100%;
+    color: var(--black);
+    font-size: 1.5rem;
+    overflow-wrap: break-word;
+}
+
+
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    main{
+        flex-direction: column;
+    }
+    .submit_container {
+        justify-content: center;
+    }
+    .result {
+        height: auto;
+        max-width: 624px;
+        margin-top: 2rem;
+        min-height: 186px;
+    }
+
+    .img_result {
+        display: none;
+    }
+
+
+    header img {
+    width: 73px;
+}
+
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    margin-top: 10%;
+    width: fit-content;
+    font-weight: bold;
+    font-family: monospace;
+    white-space: pre;
+    font-size: 30px;
+    line-height: 1.2em;
+    height:1.2em;
+    overflow: hidden;
+  }
+  .loader:before {
+    content:"Loading...\A⌰oading...\A⌰⍜ading...\A⌰⍜⏃ding...\A⌰⍜⏃⎅ing...\A⌰⍜⏃⎅⟟ng...\A⌰⍜⏃⎅⟟⋏g...\A⌰⍜⏃⎅⟟⋏☌...\A⌰⍜⏃⎅⟟⋏☌⟒..\A⌰⍜⏃⎅⟟⋏☌⟒⏁.\A⌰⍜⏃⎅⟟⋏☌⟒⏁⋔"; 
+    white-space: pre;
+    display: inline-block;
+    animation: l39 1s infinite steps(11) alternate;
+  }
+  
+  @keyframes l39 {
+    100%{transform: translateY(-100%)}
+  }
