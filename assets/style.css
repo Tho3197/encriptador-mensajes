@@ -191,6 +191,68 @@ header {
     overflow-wrap: break-word;
 }
 
+.pie_pagina{
+    width: 100%;
+    background-color: var(--main-color);
+    
+}
+.pie_pagina .grupo-1{
+    font-family: "Inter", sans-serif;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    grid-gap:700px;
+    padding: 45px 0px;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.pie_pagina .grupo-1 .box h2{
+    font-family: "Inter", sans-serif;
+    color: var(--black);
+    margin-bottom: 20px;
+    font-size: 25px;
+    display: inline-block;
+}
+
+
+.pie_pagina .grupo-1 .box p{
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    color: var(--black);
+    margin-bottom: 10px;
+}
+
+.pie_pagina .grupo-1 .box img{
+    display: inline-block;
+    width: 3rem;
+}
+
+.box h4{
+    font-size: 15px;
+    color: var(--black);
+}
+
+ .git{
+    background-image: url("./imagenes/GitHub_Logo.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 90px;
+    height: 43px;
+    margin-right: 10px;
+}
+
+.linkedin{
+    background-image: url("./imagenes/linkdnlogo.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 90px;
+    height: 35px;
+    margin-right: 10px;
+}
 
 .hidden {
     display: none;
